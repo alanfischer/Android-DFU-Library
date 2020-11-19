@@ -280,6 +280,11 @@ import no.nordicsemi.android.dfu.internal.scanner.BootloaderScannerFactory;
 		mPaused = false;
 		mAborted = true;
 		notifyLock();
+
+		if (mGatt != null) {
+			mGatt.close();
+			mGatt.disconnect();
+		}
 	}
 
 	@Override
