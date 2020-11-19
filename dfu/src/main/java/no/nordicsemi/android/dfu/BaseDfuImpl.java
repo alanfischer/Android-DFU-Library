@@ -284,6 +284,7 @@ import no.nordicsemi.android.dfu.internal.scanner.BootloaderScannerFactory;
 		if (mGatt != null) {
 			mGatt.close();
 			mGatt.disconnect();
+System.out.println("CLOSE GATT");
 		}
 	}
 
