@@ -277,15 +277,12 @@ import no.nordicsemi.android.dfu.internal.scanner.BootloaderScannerFactory;
 
 	@Override
 	public void abort() {
-System.out.println("ABORT ABORT ABORT");
 		mPaused = false;
 		mAborted = true;
 		notifyLock();
 
 		if (mGatt != null) {
 			mGatt.disconnect();
-System.out.println("CLOSE GATT");
-				loge("CLOSING GATT");
 		}
 	}
 
