@@ -277,7 +277,7 @@ import no.nordicsemi.android.dfu.internal.scanner.BootloaderScannerFactory;
 
 	@Override
 	public void abort() {
-System.out.printlN("ABORT ABORT ABORT");
+System.out.println("ABORT ABORT ABORT");
 		mPaused = false;
 		mAborted = true;
 		notifyLock();
