@@ -282,9 +282,9 @@ import no.nordicsemi.android.dfu.internal.scanner.BootloaderScannerFactory;
 		notifyLock();
 
 		if (mGatt != null) {
-			mGatt.close();
 			mGatt.disconnect();
 System.out.println("CLOSE GATT");
+				loge("CLOSING GATT");
 		}
 	}
 
